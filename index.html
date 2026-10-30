@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Артём Головин — спортивное питание и пептиды с консультацией мастера спорта</title>
+<meta name="description" content="Спортивное питание, пептиды и частные консультации от мастера спорта по пауэрлифтингу, вице-чемпиона Европы Артёма Головина. Подбор под вашу цель, опт и розница, отправка по России.">
+<meta property="og:title" content="Артём Головин — спортпит и пептиды под вашу цель">
+<meta property="og:description" content="Мастер спорта по пауэрлифтингу, вице-чемпион Европы, рекордсмен России. Подбор питания и пептидов, консультации, опт и розница.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F1F2EF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23D9261C'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23F1F2EF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#top" class="logo" aria-label="Артём Головин — на главную">
+      <svg class="logo__plate" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="currentColor"/><circle cx="16" cy="16" r="5.5" fill="var(--chalk)"/></svg>
+      <span class="logo__text">Артём Головин<span class="logo__suffix"> · спортпит</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#goals">Цели</a>
+      <a href="#services">Что заказать</a>
+      <a href="#calc">Расчёт заказа</a>
+      <a href="#how">Как заказать</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a href="#contact" class="btn btn--sm btn--primary header__cta"><span>Подобрать питание</span></a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero__inner">
+    <p class="hero__who">Мастер спорта по пауэрлифтингу</p>
+    <h1 class="hero__title">
+      <span class="ln"><span>Подберу спортпит</span></span>
+      <span class="ln"><span>и пептиды под</span></span>
+      <span class="ln"><span>вашу цель</span></span>
+    </h1>
+    <div class="hero__lower">
+      <p class="hero__sub">Артём Головин: вице-чемпион Европы, рекордсмен России. Готовлю спортсменов к соревнованиям и помогаю обычным людям: набрать, похудеть, восстановиться. Отправляю по России, лично принимаю в Волгограде.</p>
+      <div class="hero__actions">
+        <a href="#goals" class="btn btn--primary btn--lg"><span>Выбрать свою цель</span></a>
+        <a href="#calc" class="btn btn--ghost btn--lg"><span>Что даёт заказ от 30 000 ₽</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__stage" aria-hidden="true">
+    <div class="hero__floor"></div>
+    <div class="bar bar--hero" id="heroBar" data-plates="red,red,blue,yellow,green"></div>
+    <div class="hero__chalk">присед · жим · тяга</div>
+  </div>
+</section>
+
+<!-- ================= PROTOCOL ================= -->
+<section class="sec sec--about" id="about">
+  <div class="container about">
+    <div class="about__head">
+      <h2 class="hd">Питание подбирает тот, кто сам выходил на помост</h2>
+      <p class="about__lead">Я не перепродавец с прайсом. Годы соревнований, подготовка спортсменов и сотни разговоров о питании: из этого складывается подбор, а не из рекламных текстов производителя.</p>
+    </div>
+
+    <div class="protocol wipe" role="table" aria-label="Протокол регалий">
+      <div class="protocol__top" role="row">
+        <span>Протокол</span>
+        <span>Артём Головин</span>
+      </div>
+      <div class="protocol__row" role="row">
+        <span class="protocol__k" role="cell">Дисциплина</span>
+        <span class="protocol__v" role="cell">Пауэрлифтинг: присед, жим, тяга</span>
+      </div>
+      <div class="protocol__row" role="row">
+        <span class="protocol__k" role="cell">Звание</span>
+        <span class="protocol__v" role="cell">Мастер спорта</span>
+      </div>
+      <div class="protocol__row" role="row">
+        <span class="protocol__k" role="cell">Европа</span>
+        <span class="protocol__v" role="cell">Вице-чемпион Европы</span>
+      </div>
+      <div class="protocol__row" role="row">
+        <span class="protocol__k" role="cell">Россия</span>
+        <span class="protocol__v" role="cell">Рекордсмен России</span>
+      </div>
+      <div class="protocol__row" role="row">
+        <span class="protocol__k" role="cell">Сборная</span>
+        <span class="protocol__v" role="cell">Бывший член сборной</span>
+      </div>
+      <div class="protocol__row" role="row">
+        <span class="protocol__k" role="cell">Сейчас</span>
+        <span class="protocol__v" role="cell">Готовлю спортсменов к соревнованиям, консультирую обычных людей</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GOALS ================= -->
+<section class="sec sec--goals" id="goals">
+  <div class="container">
+    <div class="sec__head">
+      <h2 class="hd">С чем вы пришли, с того и начнём</h2>
+      <p class="sec__sub">Выберите цель, покажу, что разберём на консультации. Мужчины и женщины приходят с разными запросами, подбор у каждого свой.</p>
+    </div>
+
+    <div class="goals" id="goals-ui">
+      <div class="goals__tabs" role="tablist" aria-label="Цели" aria-orientation="vertical">
+        <button class="goal-tab is-active" role="tab" id="tab-0" aria-selected="true" aria-controls="panel" data-i="0">Тестостерон и энергия</button>
+        <button class="goal-tab" role="tab" id="tab-1" aria-selected="false" aria-controls="panel" data-i="1" tabindex="-1">Масса и сила</button>
+        <button class="goal-tab" role="tab" id="tab-2" aria-selected="false" aria-controls="panel" data-i="2" tabindex="-1">Похудение и рельеф</button>
+        <button class="goal-tab" role="tab" id="tab-3" aria-selected="false" aria-controls="panel" data-i="3" tabindex="-1">Нервная система и сон</button>
+        <button class="goal-tab" role="tab" id="tab-4" aria-selected="false" aria-controls="panel" data-i="4" tabindex="-1">Суставы, связки, травмы</button>
+        <button class="goal-tab" role="tab" id="tab-5" aria-selected="false" aria-controls="panel" data-i="5" tabindex="-1">Кожа, ногти, волосы</button>
+        <button class="goal-tab" role="tab" id="tab-6" aria-selected="false" aria-controls="panel" data-i="6" tabindex="-1">Подготовка к соревнованиям</button>
+      </div>
+
+      <div class="goal-panel" id="panel" role="tabpanel" aria-labelledby="tab-0" tabindex="0">
+        <div class="goal-panel__inner">
+          <h3 class="goal-panel__title" id="gp-title">Тестостерон и энергия</h3>
+          <p class="goal-panel__lead" id="gp-lead">Чаще всего с этим приходят мужчины: сил стало меньше, восстановление затянулось, мотивация просела.</p>
+          <ul class="goal-panel__list" id="gp-list">
+            <li>Разберём режим, питание и тренировки: часто причина там.</li>
+            <li>Подберу добавки и витамины под вашу задачу, без лишнего.</li>
+            <li>Если вопрос выходит за рамки добавок, прямо скажу, когда нужны анализы и врач.</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary" id="gp-cta" data-goal="Тестостерон и энергия"><span>Обсудить эту цель</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="sec sec--services" id="services">
+  <div class="container">
+    <div class="sec__head">
+      <h2 class="hd">Что можно заказать</h2>
+      <p class="sec__sub">Розница и опт. Много постоянных клиентов возвращаются за повторным заказом, и чаще всего это комплексный заказ под цель.</p>
+    </div>
+
+    <ul class="rows">
+      <li class="row">
+        <div class="row__main">
+          <h3 class="row__name">Спортивное питание</h3>
+          <p class="row__text">Протеины, креатин, аминокислоты, витамины и комплексы. Беру в заказ только то, что подходит под вашу задачу.</p>
+        </div>
+        <div class="row__side">Розница и опт</div>
+      </li>
+      <li class="row">
+        <div class="row__main">
+          <h3 class="row__name">Пептиды</h3>
+          <p class="row__text">Подбор под цель и заказ. Объясню, зачем это нужно, чего ждать и когда лучше не торопиться.</p>
+        </div>
+        <div class="row__side">Под заказ</div>
+      </li>
+      <li class="row">
+        <div class="row__main">
+          <h3 class="row__name">Консультация</h3>
+          <p class="row__text">Разбор цели, текущего питания и добавок. На выходе понятный план: что принимать, в каком порядке и что не нужно.</p>
+        </div>
+        <div class="row__side row__side--price">2 000–5 000 ₽</div>
+      </li>
+      <li class="row">
+        <div class="row__main">
+          <h3 class="row__name">Комплексный заказ</h3>
+          <p class="row__text">Собираю всё под цель в одну отправку. Заказ от 30 000 ₽ — консультация и доставка бесплатно.</p>
+        </div>
+        <div class="row__side">От 30 000 ₽</div>
+      </li>
+      <li class="row">
+        <div class="row__main">
+          <h3 class="row__name">Подготовка спортсменов</h3>
+          <p class="row__text">Питание и добавки на весь сезон: от набора до выступления на помосте. Работаю с теми, кто готовится к соревнованиям.</p>
+        </div>
+        <div class="row__side">Индивидуально</div>
+      </li>
+    </ul>
+
+    <div class="opt">
+      <div class="opt__text">
+        <h3 class="opt__title">Работаете с опта?</h3>
+        <p>Тренерам, залам и магазинам. Условия и прайс отправлю по запросу.</p>
+      </div>
+      <a href="#contact" class="btn btn--ink" data-goal="Опт"><span>Запросить опт</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CALC ================= -->
+<section class="sec sec--calc" id="calc">
+  <div class="container">
+    <div class="sec__head sec__head--calc">
+      <h2 class="hd">Загрузите штангу до 30 000 ₽</h2>
+      <p class="sec__sub">Двигайте ползунок: чем больше заказ, тем тяжелее гриф. На 30 000 ₽ гриф «закрыт», и консультация с доставкой достаются бесплатно.</p>
+    </div>
+
+    <div class="calc" id="calcBox">
+      <div class="calc__stage" aria-hidden="true">
+        <div class="bar bar--calc" id="calcBar"></div>
+        <div class="calc__lock" id="calcLock">Консультация и доставка бесплатно</div>
+      </div>
+
+      <div class="calc__panel">
+        <div class="calc__readout">
+          <span class="calc__label">Сумма заказа</span>
+          <output class="calc__sum" id="calcSum" for="calcRange">12 000 ₽</output>
+        </div>
+
+        <label class="visually-hidden" for="calcRange">Сумма заказа в рублях</label>
+        <input type="range" id="calcRange" class="range" min="0" max="60000" step="1000" value="12000">
+
+        <p class="calc__msg" id="calcMsg" aria-live="polite">Ещё 18 000 ₽ — и консультация с доставкой бесплатно.</p>
+
+        <div class="calc__chips" role="group" aria-label="Быстрый выбор суммы">
+          <button type="button" class="chip" data-v="5000">5 000</button>
+          <button type="button" class="chip" data-v="15000">15 000</button>
+          <button type="button" class="chip" data-v="30000">30 000</button>
+          <button type="button" class="chip" data-v="45000">45 000</button>
+        </div>
+
+        <ul class="legend" aria-label="Что значит цвет блина">
+          <li><i style="--c:var(--plate-red)"></i>10 000 ₽</li>
+          <li><i style="--c:var(--plate-blue)"></i>5 000 ₽</li>
+          <li><i style="--c:var(--plate-yellow)"></i>2 000 ₽</li>
+          <li><i style="--c:var(--plate-green)"></i>1 000 ₽</li>
+        </ul>
+
+        <a href="#contact" class="btn btn--primary btn--block" id="calcCta" data-goal="Комплексный заказ"><span>Собрать такой заказ</span></a>
+        <p class="calc__note">Это наглядный расчёт. Точный состав и цену назову после разбора вашей цели.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW ================= -->
+<section class="sec sec--how" id="how">
+  <div class="container how">
+    <div class="how__head">
+      <h2 class="hd">Как заказать, чтобы не промахнуться</h2>
+      <p class="sec__sub">Четыре шага. От вас нужна цель и пара ответов, остальное беру на себя.</p>
+    </div>
+
+    <ol class="steps" id="steps">
+      <li class="step">
+        <h3 class="step__t">Пишете цель</h3>
+        <p>Оставляете заявку или пишете во ВКонтакте: что хотите получить и с чего начинаете.</p>
+      </li>
+      <li class="step">
+        <h3 class="step__t">Разбираем вместе</h3>
+        <p>Задаю вопросы про тренировки, питание, самочувствие и то, что вы уже принимаете.</p>
+      </li>
+      <li class="step">
+        <h3 class="step__t">Получаете план и цену</h3>
+        <p>Состав заказа, порядок приёма и актуальная стоимость. Лишнего в плане нет.</p>
+      </li>
+      <li class="step">
+        <h3 class="step__t">Заказ и отправка</h3>
+        <p>Отправляю по России. Больше всего заказов идёт в Москву и Санкт-Петербург, в Волгограде можно забрать лично.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= EXPENSIVE ================= -->
+<section class="sec sec--price" id="price">
+  <div class="container">
+    <h2 class="hd hd--wide">Дорого? Считайте не цену банки, а что вы купили</h2>
+    <div class="price-cols">
+      <div class="price-col">
+        <h3>Только нужное</h3>
+        <p>Многие переплачивают за набор «на всякий случай». Подбор под цель убирает лишнее, и итоговый заказ часто выходит разумнее, чем собранный наугад.</p>
+      </div>
+      <div class="price-col">
+        <h3>Цена идёт за курсом</h3>
+        <p>Закупка привязана к курсу доллара, поэтому цены двигаются вместе с ним. Актуальную стоимость называю в день заказа, без сюрпризов.</p>
+      </div>
+      <div class="price-col">
+        <h3>Бесплатно от 30 000 ₽</h3>
+        <p>В крупном заказе консультация и доставка идут в подарок. Чем плотнее собран заказ, тем меньше вы платите за каждый шаг.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec sec--faq" id="faq">
+  <div class="container faq">
+    <div class="faq__head">
+      <h2 class="hd">Частые вопросы</h2>
+      <p class="sec__sub">Не нашли своё? Напишите в заявке, отвечу лично.</p>
+    </div>
+
+    <div class="faq__list" id="faqList">
+      <div class="qa">
+        <h3 class="qa__q"><button type="button" aria-expanded="false"><span>Сколько стоит консультация?</span><i aria-hidden="true"></i></button></h3>
+        <div class="qa__a"><div><p>От 2 000 до 5 000 ₽, в зависимости от вашего запроса. Если вы заказываете от 30 000 ₽, консультация и доставка бесплатны.</p></div></div>
+      </div>
+      <div class="qa">
+        <h3 class="qa__q"><button type="button" aria-expanded="false"><span>Куда вы отправляете?</span><i aria-hidden="true"></i></button></h3>
+        <div class="qa__a"><div><p>По всей России. Чаще всего заказы уходят в Москву и Санкт-Петербург. Если вы в Волгограде, можно встретиться лично.</p></div></div>
+      </div>
+      <div class="qa">
+        <h3 class="qa__q"><button type="button" aria-expanded="false"><span>Вы работаете с оптом?</span><i aria-hidden="true"></i></button></h3>
+        <div class="qa__a"><div><p>Да. Продаю тренерам, залам и магазинам. Напишите, что и в каких объёмах нужно, и отправлю условия.</p></div></div>
+      </div>
+      <div class="qa">
+        <h3 class="qa__q"><button type="button" aria-expanded="false"><span>Подойдёт ли это женщине?</span><i aria-hidden="true"></i></button></h3>
+        <div class="qa__a"><div><p>Да. Запросы те же: похудение, тонус, восстановление. Отдельно часто просят про кожу, ногти и волосы, подбор здесь свой.</p></div></div>
+      </div>
+      <div class="qa">
+        <h3 class="qa__q"><button type="button" aria-expanded="false"><span>Нужно ли идти к врачу?</span><i aria-hidden="true"></i></button></h3>
+        <div class="qa__a"><div><p>Добавки и пептиды не заменяют лечение. Если у вас хронические заболевания, беременность, травма или вы принимаете лекарства, сначала проконсультируйтесь с врачом. Если вижу, что вопрос не мой, скажу прямо.</p></div></div>
+      </div>
+      <div class="qa">
+        <h3 class="qa__q"><button type="button" aria-expanded="false"><span>Вы готовите к соревнованиям?</span><i aria-hidden="true"></i></button></h3>
+        <div class="qa__a"><div><p>Да, это моя основа. Готовлю спортсменов к соревнованиям и расписываю питание и добавки по этапам подготовки.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec sec--contact" id="contact">
+  <div class="container contact">
+    <div class="contact__text">
+      <h2 class="hd">Напишите цель, отвечу лично</h2>
+      <p class="contact__lead">Оставьте контакт и пару слов о том, чего хотите. Свяжусь, задам вопросы и скажу, что вам действительно нужно.</p>
+      <ul class="contact__list">
+        <li><span>Где</span> Волгоград лично, отправка по всей России</li>
+        <li><span>Группа</span> <a href="https://vk.com/turkst" target="_blank" rel="noopener">vk.com/turkst</a></li>
+        <li><span>Условие</span> Заказ от 30 000 ₽: консультация и доставка бесплатно</li>
+      </ul>
+    </div>
+
+    <form class="form" id="leadForm" novalidate>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="form__field">
+        <label for="f-name">Имя</label>
+        <input type="text" id="f-name" name="name" placeholder="Как к вам обращаться" autocomplete="name" required>
+      </div>
+      <div class="form__field">
+        <label for="f-phone">Телефон, Telegram или ВКонтакте</label>
+        <input type="text" id="f-phone" name="phone" placeholder="+7 900 000-00-00 или @username" autocomplete="tel" required>
+      </div>
+      <div class="form__field">
+        <label for="f-goal">Что нужно</label>
+        <select id="f-goal" name="goal">
+          <option>Тестостерон и энергия</option>
+          <option>Масса и сила</option>
+          <option>Похудение и рельеф</option>
+          <option>Нервная система и сон</option>
+          <option>Суставы, связки, травмы</option>
+          <option>Кожа, ногти, волосы</option>
+          <option>Подготовка к соревнованиям</option>
+          <option>Комплексный заказ</option>
+          <option>Опт</option>
+          <option>Другое</option>
+        </select>
+      </div>
+      <div class="form__field">
+        <label for="f-comment">Коротко о себе (необязательно)</label>
+        <textarea id="f-comment" name="comment" rows="3" placeholder="Возраст, вес, как тренируетесь, что уже принимаете"></textarea>
+      </div>
+      <button type="submit" class="btn btn--ink btn--block btn--lg"><span>Отправить заявку</span></button>
+      <p class="form__hint" id="formHint" role="status" aria-live="polite"></p>
+      <p class="form__legal">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a>.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#top" class="logo">
+        <svg class="logo__plate" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="currentColor"/><circle cx="16" cy="16" r="5.5" fill="var(--chalk)"/></svg>
+        <span class="logo__text">Артём Головин</span>
+      </a>
+      <p>Спортивное питание, пептиды и консультации. Волгоград, отправка по России.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Нижнее меню">
+      <a href="#goals">Цели</a>
+      <a href="#services">Что заказать</a>
+      <a href="#calc">Расчёт заказа</a>
+      <a href="#faq">Вопросы</a>
+      <a href="https://vk.com/turkst" target="_blank" rel="noopener">ВКонтакте</a>
+      <a href="privacy.html">Конфиденциальность</a>
+    </nav>
+  </div>
+  <div class="container footer__legal">
+    <p>Информация на сайте не является медицинской рекомендацией, а продукция не является лекарственным средством. Перед применением добавок и пептидов проконсультируйтесь с врачом. Сайт не является публичной офертой.</p>
+    <p>© <span id="year">2026</span> Артём Головин</p>
+  </div>
+</footer>
+
+<a class="fab" href="https://vk.com/turkst" target="_blank" rel="noopener" aria-label="Группа ВКонтакте">
+  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12.8 17.5C6.5 17.5 2.9 13.2 2.7 6h3.2c.1 5.3 2.4 7.5 4.3 8V6h3v4.6c1.8-.2 3.8-2.3 4.4-4.6h3c-.5 2.8-2.600 4.900-4.100 5.800 1.500.7 3.900 2.500 4.800 5.700h-3.300c-.7-2.200-2.400-3.900-4.800-4.100v4.100h-.4Z"/></svg>
+  <span>ВКонтакте</span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
