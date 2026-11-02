@@ -356,7 +356,7 @@
       console.error(err);
       label.textContent = 'Не отправилось';
       hint.className = 'form__hint is-err';
-      hint.textContent = 'Не получилось отправить. Попробуйте ещё раз или напишите во ВКонтакте.';
+      hint.textContent = 'Не получилось отправить. Попробуйте ещё раз или напишите в Telegram: @validolmen.';
     } finally {
       setTimeout(() => { label.textContent = orig; btn.disabled = false; }, 3500);
     }

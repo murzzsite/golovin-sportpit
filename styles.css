@@ -462,3 +462,6 @@ button { cursor: pointer; }
   .js .hero__who, .js .hero__sub, .js .hero__actions, .js .hero__chalk { opacity: 1 !important; }
   .js .bar:not(.is-on) .plate, .js .bar:not(.is-on) .bar__collar, .js .bar:not(.is-on) .bar__end { opacity: 1 !important; }
 }
+
+.contact__tg { --bg: var(--ink); margin-top: 28px; }
+.contact__tg + .contact__list { margin-top: 28px; }
