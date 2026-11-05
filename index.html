@@ -26,7 +26,7 @@
     </a>
     <nav class="nav" id="nav" aria-label="Основная навигация">
       <a href="#goals">Цели</a>
-      <a href="#services">Что заказать</a>
+      <a href="#services">Услуги</a>
       <a href="#calc">Расчёт заказа</a>
       <a href="#how">Как заказать</a>
       <a href="#faq">Вопросы</a>
@@ -41,12 +41,21 @@
 <!-- ================= HERO ================= -->
 <section class="hero">
   <div class="container hero__inner">
+    <div class="hero__top">
+    <div class="hero__headline">
     <p class="hero__who">Мастер спорта по пауэрлифтингу</p>
     <h1 class="hero__title">
       <span class="ln"><span>Подберу спортпит</span></span>
       <span class="ln"><span>и пептиды под</span></span>
       <span class="ln"><span>вашу цель</span></span>
     </h1>
+    </div>
+    <div class="hero__slider" id="heroSlider" aria-roledescription="карусель" aria-label="Фото с соревнований">
+      <figure class="slide is-on"><img src="img/bench.jpg" width="960" height="624" alt="Артём Головин выполняет жим лёжа на чемпионате Европы"></figure>
+      <figure class="slide"><img src="img/medal.jpg" width="640" height="853" alt="Медаль чемпионата Европы 2019, Тампере" loading="lazy"></figure>
+      <div class="slider__dots" role="group" aria-label="Выбор фото"></div>
+    </div>
+    </div>
     <div class="hero__lower">
       <p class="hero__sub">Артём Головин: вице-чемпион Европы, рекордсмен России. Готовлю спортсменов к соревнованиям и помогаю обычным людям: набрать, похудеть, восстановиться. Отправляю по России, лично принимаю в Волгограде.</p>
       <div class="hero__actions">
@@ -104,16 +113,6 @@
     </div>
     </div>
 
-    <div class="proof">
-      <figure class="proof__photo wipe">
-        <img src="img/bench.jpg" width="960" height="624" alt="Артём Головин выполняет жим лёжа на чемпионате Европы" loading="lazy">
-        <figcaption>На помосте чемпионата Европы</figcaption>
-      </figure>
-      <figure class="proof__medal wipe">
-        <img src="img/medal.jpg" width="640" height="853" alt="Медаль чемпионата Европы 2019, Тампере, жим лёжа в экипировке" loading="lazy">
-        <figcaption>Медаль чемпионата Европы 2019, жим лёжа в экипировке</figcaption>
-      </figure>
-    </div>
   </div>
 </section>
 
@@ -156,38 +155,38 @@
 <section class="sec sec--services" id="services">
   <div class="container">
     <div class="sec__head">
-      <h2 class="hd">Что можно заказать</h2>
-      <p class="sec__sub">Розница и опт. Много постоянных клиентов возвращаются за повторным заказом, и чаще всего это комплексный заказ под цель.</p>
+      <h2 class="hd">Услуги и продукты</h2>
+      <p class="sec__sub">Работаем с частными клиентами и бизнесом. Большинство возвращаются за комплексным решением под свою задачу.</p>
     </div>
 
     <ul class="rows">
       <li class="row">
         <div class="row__main">
           <h3 class="row__name">Спортивное питание</h3>
-          <p class="row__text">Протеины, креатин, аминокислоты, витамины и комплексы. Беру в заказ только то, что подходит под вашу задачу.</p>
+          <p class="row__text">Протеины, креатин, аминокислоты, витамины и комплексы. Подберём только то, что действительно нужно для вашей цели, без лишних трат.</p>
         </div>
-        <div class="row__side">Розница и опт</div>
+        <a class="btn btn--sm btn--primary row__btn" href="https://vk.com/turkst" target="_blank" rel="noopener"><span>Выбрать товар</span></a>
       </li>
       <li class="row">
         <div class="row__main">
           <h3 class="row__name">Пептиды</h3>
-          <p class="row__text">Подбор под цель и заказ. Объясню, зачем это нужно, чего ждать и когда лучше не торопиться.</p>
+          <p class="row__text">Индивидуальный подбор под вашу цель. Объясним, как это работает, когда ждать результат и почему не стоит торопиться.</p>
         </div>
-        <div class="row__side">Под заказ</div>
+        <a class="btn btn--sm btn--primary row__btn" href="#contact" data-goal="Пептиды"><span>Оставить заявку</span></a>
       </li>
       <li class="row">
         <div class="row__main">
           <h3 class="row__name">Консультация</h3>
-          <p class="row__text">Онлайн-разбор цели, текущего питания и добавок. На выходе понятный план: что принимать, в каком порядке и что не нужно.</p>
+          <p class="row__text">Онлайн-разбор вашего рациона и добавок. На выходе понятный план: что принимать, в каком порядке и что точно не нужно.</p>
         </div>
-        <div class="row__side row__side--price">2 000–5 000 ₽</div>
+        <a class="btn btn--sm btn--primary row__btn" href="#contact" data-goal="Консультация"><span>Записаться</span></a>
       </li>
       <li class="row">
         <div class="row__main">
           <h3 class="row__name">Комплексный заказ</h3>
-          <p class="row__text">Собираю всё под цель в одну отправку. Заказ от 30 000 ₽ — консультация и доставка бесплатно.</p>
+          <p class="row__text">Соберём всё под цель в одну отправку. Заказ от 30 000 ₽ — консультация и доставка бесплатно.</p>
         </div>
-        <div class="row__side">От 30 000 ₽</div>
+        <a class="btn btn--sm btn--primary row__btn" href="#calc"><span>Собрать заказ</span></a>
       </li>
       <li class="row">
         <div class="row__main">
@@ -200,10 +199,10 @@
 
     <div class="opt">
       <div class="opt__text">
-        <h3 class="opt__title">Работаете с опта?</h3>
-        <p>Тренерам, залам и магазинам. Условия и прайс отправлю по запросу.</p>
+        <h3 class="opt__title">Опт для тренеров, клубов и магазинов</h3>
+        <p>Специальные условия для тренеров, фитнес-клубов и магазинов. Отправим актуальный прайс-лист по запросу.</p>
       </div>
-      <a href="#contact" class="btn btn--ink" data-goal="Опт"><span>Запросить опт</span></a>
+      <a href="#contact" class="btn btn--ink" data-goal="Опт"><span>Получить прайс</span></a>
     </div>
   </div>
 </section>
@@ -286,19 +285,19 @@
 <!-- ================= EXPENSIVE ================= -->
 <section class="sec sec--price" id="price">
   <div class="container">
-    <h2 class="hd hd--wide">Дорого? Считайте не цену банки, а что вы купили</h2>
+    <h2 class="hd hd--wide">Дорого? Считайте не цену банки, а результат</h2>
     <div class="price-cols">
       <div class="price-col">
         <h3>Только нужное</h3>
         <p>Многие переплачивают за набор «на всякий случай». Подбор под цель убирает лишнее, и итоговый заказ часто выходит разумнее, чем собранный наугад.</p>
       </div>
       <div class="price-col">
-        <h3>Цены открыты</h3>
-        <p>Актуальные цены и основной ассортимент собраны в группе ВКонтакте. Часть позиций там не показать из-за блокировок, их цену и наличие называю лично.</p>
+        <h3>Цены и наличие</h3>
+        <p>Основной ассортимент и цены есть в группе ВКонтакте. Если нужной позиции там нет, напишите в Telegram, и мы сразу подтвердим цену и наличие.</p>
       </div>
       <div class="price-col">
         <h3>Бесплатно от 30 000 ₽</h3>
-        <p>В крупном заказе консультация и доставка идут в подарок. Чем плотнее собран заказ, тем меньше вы платите за каждый шаг.</p>
+        <p>В крупном заказе консультация и доставка идут в подарок. Чем крупнее заказ, тем выгоднее условия.</p>
       </div>
     </div>
   </div>
@@ -315,7 +314,7 @@
     <div class="faq__list" id="faqList">
       <div class="qa">
         <h3 class="qa__q"><button type="button" aria-expanded="false"><span>Сколько стоит консультация?</span><i aria-hidden="true"></i></button></h3>
-        <div class="qa__a"><div><p>От 2 000 до 5 000 ₽, в зависимости от вашего запроса. Если вы заказываете от 30 000 ₽, консультация и доставка бесплатны.</p></div></div>
+        <div class="qa__a"><div><p>Стоимость зависит от вашего запроса, назовём её после пары уточняющих вопросов. При заказе от 30 000 ₽ консультация и доставка бесплатны.</p></div></div>
       </div>
       <div class="qa">
         <h3 class="qa__q"><button type="button" aria-expanded="false"><span>Куда вы отправляете?</span><i aria-hidden="true"></i></button></h3>
@@ -352,7 +351,8 @@
         <li><span>Telegram</span> <a href="https://t.me/validolmen" target="_blank" rel="noopener">@validolmen</a></li>
         <li><span>Телефон</span> <a href="tel:+79616731618">+7 961 673-16-18</a></li>
         <li><span>Где</span> Консультации онлайн, отправка по России, лично в Волгограде</li>
-        <li><span>Цены</span> <a href="https://vk.com/turkst" target="_blank" rel="noopener">группа ВКонтакте</a>, остальное называю лично</li>
+        <li><span>Цены</span> <a href="https://vk.com/turkst" target="_blank" rel="noopener">группа ВКонтакте</a></li>
+        <li><span>Бонусные условия</span> Бонусы при крупных заказах, также от 30 000 ₽ бесплатная доставка и консультация</li>
         <li><span>Условие</span> Заказ от 30 000 ₽: консультация и доставка бесплатно</li>
       </ul>
     </div>
@@ -379,6 +379,9 @@
           <option>Подготовка к соревнованиям</option>
           <option>Комплексный заказ</option>
           <option>Опт</option>
+          <option>Спортивное питание</option>
+          <option>Пептиды</option>
+          <option>Консультация</option>
           <option>Другое</option>
         </select>
       </div>
@@ -406,7 +409,7 @@
     </div>
     <nav class="footer__nav" aria-label="Нижнее меню">
       <a href="#goals">Цели</a>
-      <a href="#services">Что заказать</a>
+      <a href="#services">Услуги</a>
       <a href="#calc">Расчёт заказа</a>
       <a href="#faq">Вопросы</a>
       <a href="https://t.me/validolmen" target="_blank" rel="noopener">Telegram</a>

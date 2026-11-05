@@ -96,6 +96,36 @@
     }, { passive: true });
   }
 
+  // ===== HERO SLIDER =====
+  (() => {
+    const box = $('#heroSlider');
+    if (!box) return;
+    const slides = $('.slide', box);
+    const dots = $('.slider__dots', box);
+    let cur = 0, timer = 0;
+    slides.forEach((_, i) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Фото ' + (i + 1));
+      b.addEventListener('click', () => { show(i); restart(); });
+      dots.appendChild(b);
+    });
+    const show = i => {
+      cur = (i + slides.length) % slides.length;
+      slides.forEach((s, k) => s.classList.toggle('is-on', k === cur));
+      $('button', dots).forEach((b, k) => b.classList.toggle('is-on', k === cur));
+    };
+    const restart = () => {
+      clearInterval(timer);
+      if (reduced || slides.length < 2) return;
+      timer = setInterval(() => show(cur + 1), 4800);
+    };
+    box.addEventListener('pointerenter', () => clearInterval(timer));
+    box.addEventListener('pointerleave', restart);
+    show(0);
+    restart();
+  })();
+
   // ===== SPLIT HEADINGS INTO WORDS =====
   $$('.hd').forEach(h => {
     const text = h.textContent.trim().replace(/\s+/g, ' ');
