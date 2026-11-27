@@ -377,6 +377,7 @@
         body: JSON.stringify(payload),
       });
       if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      try { window.ym && ym(114722419, 'reachGoal', 'lead'); } catch (e) {}
       label.textContent = 'Заявка отправлена';
       hint.className = 'form__hint is-ok';
       hint.textContent = 'Принял. Свяжусь с вами и задам пару вопросов по цели.';
